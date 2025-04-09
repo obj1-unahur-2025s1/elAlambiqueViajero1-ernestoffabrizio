@@ -1,0 +1,16 @@
+import elAlambiqueViajero.*
+
+test "luke viaja a paris"{
+    luke.viajarA_En_(paris, elAlambiqueVeloz)
+    assert.equals("llavero", luke.recuerdo())
+    }
+test "luke viaja a bagdad"{
+    bagdad.recuerdoNuevo("ArmasMasivas")
+    luke.viajarA_En_(bagdad, elAlambiqueVeloz)
+    assert.equals("ArmasMasivas", luke.recuerdo())
+}
+test "luke viaja a las vegas"{
+    lasVegas.haceHomenajeA_(bagdad)
+    luke.viajarA_En_(lasVegas, elAlambiqueVeloz)
+    assert.equals("bidon de petroleo", luke.recuerdo())
+}   
